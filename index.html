@@ -9,15 +9,15 @@
   <body>
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Destinations</a></li>
-        <li><a href="#">Tours</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#tours">Tours</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
 
-    <header class="banner">
+    <header class="banner" id="home">
       <h1>Intramuros Heritage Tours</h1>
       <p>
         Discover the historic walls, landmarks, and rich Spanish-era heritage of
@@ -25,6 +25,7 @@
       </p>
     </header>
 
+    <section id="destinations">
     <h2 class="top3">Top 3 Tourist Spot</h2>
 
     <div class="card_holder">
@@ -64,8 +65,11 @@
         </div>
       </div>
     </div>
+    </section>
 
     <br><br>
+
+    <section id="tours">
     <form class="booking_form">
 
       <h2>Booking Form</h2>
@@ -77,8 +81,14 @@
       <input type="email" id="email" name="email" required />
 
       <label for="destination">Destination:</label>
-      <input type="text" id="destination" name="destination" required />
-
+      <select id="destination" name="destination" required> 
+      <option value="" disabled selected>Select a destination</option> 
+      <option value="Fort Santiago">Fort Santiago</option>
+      <option value="San Agustin Church">San Agustin Church</option>
+      <option value="Manila Cathedral">Manila Cathedral</option>
+      </select>
+      
+      <br><br>
       <label for="travel_date">Travel Date:</label>
       <input type="date" id="travel_date" name="travel_date" required />
 
@@ -92,10 +102,12 @@
 
       <button type="submit" class="book_now">Book Now</button>
     </form>
-    
+    </section>
+
     <br><br>
 
-    <div class="tour_packages">
+  <section id="tours"></section>
+  <div class="tour_packages">
   <h2>Tour Package Table</h2>
 
   <table class="tour_table">
@@ -128,6 +140,7 @@
     </tr>
   </table>
 </div>
+</section>
 
   </body>
 </html>

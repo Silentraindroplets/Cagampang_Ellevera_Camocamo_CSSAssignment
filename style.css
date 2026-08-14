@@ -121,6 +121,16 @@ li:hover {
   border-radius: 6px;
 }
 
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    appearance: auto;
+}
+
 .book_now {
   background-color: #429b11;
   color: #fff;
